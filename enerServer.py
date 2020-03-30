@@ -4,6 +4,13 @@ import time
 
 app = Flask(__name__)
 
+# Use these variables to name your sockets
+# todo: convert to objects that store the pin output and name
+socket1name = "Fan"
+socket2name = "TV"
+socket3name = "Speakers"
+socket4name = "" # Currently unused
+
 # set the pins numbering mode
 GPIO.setmode(GPIO.BOARD)
 # Select the GPIO pins used for the encoder K0-K3 data inputs
@@ -29,6 +36,10 @@ GPIO.output (13, False)
 @app.route('/')
 def index():
     templateData = {
+        'socket1name' : socket1name,
+        'socket2name' : socket2name,
+        'socket3name' : socket3name,
+        'socket4name' : socket4name
     }
     return render_template('index.html', **templateData)
 

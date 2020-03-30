@@ -32,28 +32,28 @@
 		<div class="container">
 			<div class="row">
 				<div class="col">
-					<h2>Socket 1</h2>
+					<h2>Socket 1{% if socket1name is defined and socket1name|length %} - {{socket1name}}{% endif %}</h2>
 					<a href="/S1/ON" class="btn btn-success btn-lg btn-block">ON</a>
 					<a href="/S1/OFF" class="btn btn-danger btn-lg btn-block">OFF</a>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col">
-					<h2>Socket 2</h2>
+					<h2>Socket 2{% if socket2name is defined and socket2name|length %} - {{socket2name}}{% endif %}</h2>
 					<a href="/S2/ON" class="btn btn-success btn-lg btn-block">ON</a>
 					<a href="/S2/OFF" class="btn btn-danger btn-lg btn-block">OFF</a>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col">
-					<h2>Socket 3</h2>
+					<h2>Socket 3{% if socket3name is defined and socket3name|length %} - {{socket3name}}{% endif %}</h2>
 					<a href="/S3/ON" class="btn btn-success btn-lg btn-block">ON</a>
 					<a href="/S3/OFF" class="btn btn-danger btn-lg btn-block">OFF</a>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col">
-					<h2>Socket 4</h2>
+					<h2>Socket 4{% if socket4name is defined and socket4name|length %} - {{socket4name}}{% endif %}</h2>
 					<a href="/S4/ON" class="btn btn-success btn-lg btn-block">ON</a>
 					<a href="/S4/OFF" class="btn btn-danger btn-lg btn-block">OFF</a>
 				</div>
